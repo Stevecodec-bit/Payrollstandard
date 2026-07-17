@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard International School - Payslip Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+
+            <img src="images/logo.png" alt="School Logo" class="logo">
+
+<h1 class="school-name">
+STANDARD INTERNATIONAL SCHOOL
+</h1>
+
+            <p class="subtitle">
+                Monthly Payslip Generator
+            </p>
+
+        </header>
+
+        <!-- Search Section -->
+        <section class="searchBox">
+
+            <label for="teacherName">
+                Teacher's Name
+            </label>
+
+            <input
+                type="text"
+                id="teacherName"
+                placeholder="Enter Teacher's Name"
+                list="teacherList"
+                autocomplete="off"
+            >
+
+            <datalist id="teacherList"></datalist>
+
+            <button type="button" onclick="generatePayslip()">
+                Generate Payslip
+            </button>
+<button type="button" onclick="window.location.href='login.html'">
+    Administrator Login
+</button>
+
+            <!-- Reserved for future -->
+            <!--
+            <button type="button" class="secondaryBtn">
+                Generate All Payslips
+            </button>
+            -->
+
+            <p id="message"></p>
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <p>
+                Payroll Management System &copy; 2026
+            </p>
+
+        </footer>
+
+    </div>
+
+<script src="common.js"></script>
+<script src="teachers.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>

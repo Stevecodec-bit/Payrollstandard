@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>System Settings</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<img src="images/logo.png" class="logo">
+
+<h1>System Settings</h1>
+
+<h3>Standard International School</h3>
+
+</div>
+
+<div class="searchBox">
+
+<label>School Name</label>
+<input type="text" id="schoolName">
+
+<label>School Motto</label>
+<input type="text" id="motto">
+
+<label>School Address</label>
+<input type="text" id="address">
+
+<label>Phone Number 1</label>
+<input type="text" id="phone1">
+
+<label>Phone Number 2</label>
+<input type="text" id="phone2">
+
+<label>City</label>
+<input type="text" id="city">
+
+<label>Payroll Month</label>
+<input type="text" id="payMonth" placeholder="July 2026">
+
+<br><br>
+
+<button onclick="saveSettings()">
+
+ Save Settings
+
+</button>
+
+<button onclick="window.location='admin.html'">
+
+⬅ Back
+
+</button>
+
+<p id="msg"></p>
+
+</div>
+
+</div>
+
+<script src="settings.js"></script>
+
+</body>
+
+</html>

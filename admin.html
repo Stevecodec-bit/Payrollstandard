@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Payroll Administration</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Overlay -->
+
+<div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+<div class="container">
+
+    <!-- Header -->
+
+    <div class="header">
+
+        <img src="images/logo.png" class="logo" alt="School Logo">
+
+        <h1 class="school-name">
+            STANDARD INTERNATIONAL SCHOOL
+        </h1>
+
+        <h3>Payroll Administration System</h3>
+
+        <p>Manage Staff Payroll Records</p>
+
+    </div>
+
+    <!-- Top Navigation -->
+
+    <div class="topBar">
+
+        <span class="menuIcon" onclick="toggleMenu()">
+            ☰ Menu
+        </span>
+
+        <h2>Dashboard</h2>
+
+    </div>
+
+    <!-- Side Menu -->
+
+    <div id="sideMenu" class="sideMenu">
+
+        <button onclick="window.location='admin.html'">
+             Dashboard
+        </button>
+
+        <button onclick="window.location='manage.html'">
+             Teachers
+        </button>
+
+        <button onclick="window.location='index.html'">
+             Generate Payslips
+        </button>
+
+        <button onclick="window.location='reports.html'">
+             Reports
+        </button>
+
+        <button onclick="window.location='settings.html'">
+             Settings
+        </button>
+
+        <button onclick="window.location='change-password.html'">
+             Security
+        </button>
+
+        <button onclick="logout()">
+             Logout
+        </button>
+
+    </div>
+
+    <!-- Dashboard -->
+
+    <div class="dashboard">
+
+        <div class="card">
+
+            <h2 id="totalTeachers">0</h2>
+
+            <p>Total Teachers</p>
+
+        </div>
+
+        <div class="card">
+
+            <h2 id="totalPayroll">₦0</h2>
+
+            <p>Total Monthly Payroll</p>
+
+        </div>
+
+        <div class="card">
+
+            <h2 id="averageSalary">₦0</h2>
+
+            <p>Average Salary</p>
+
+        </div>
+
+    </div>
+
+    <!-- Search Teacher -->
+
+    <div class="searchBox">
+
+        <label for="searchTeacher">
+
+            Search Teacher
+
+        </label>
+
+        <input
+            type="text"
+            id="searchTeacher"
+            placeholder="Enter teacher's name">
+
+        <button onclick="searchTeacher()">
+
+            Search Teacher
+
+        </button>
+
+    </div>
+
+    <!-- Recent Teachers -->
+
+    <h2 style="margin-top:30px; margin-bottom:15px;">
+
+        Recent Teachers
+
+    </h2>
+
+    <table id="recentTeachers">
+
+        <thead>
+
+            <tr>
+
+                <th>Staff ID</th>
+
+                <th>Name</th>
+
+                <th>Net Pay</th>
+
+                <th>Action</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="recentTeachersBody">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="common.js"></script>
+<script src="teachers.js"></script>
+<script src="admin.js"></script>
+
+</body>
+
+</html>

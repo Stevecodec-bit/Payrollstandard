@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Teacher Management</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <img src="images/logo.png" class="logo" alt="School Logo">
+
+<h1 class="school-name">
+STANDARD INTERNATIONAL SCHOOL
+</h1>
+
+        <h3>Teacher Management</h3>
+
+    </div>
+
+    <div class="searchBox">
+
+        <h2>Add / Edit Teacher</h2>
+
+        <input type="text" id="staffId" placeholder="Staff ID">
+
+        <input type="text" id="teacherName" placeholder="Teacher Name">
+
+        <input type="number" id="grossPay" placeholder="Gross Pay">
+
+        <input type="number" id="lateComing" placeholder="Late Coming">
+
+        <input type="number" id="absentee" placeholder="Absentee">
+
+        <input type="number" id="bankCharges" placeholder="Bank Charges">
+
+        <input type="number" id="lessonPlan" placeholder="Lesson Plan">
+
+        <input type="number" id="dutyRoster" placeholder="Duty Roster">
+
+        <input type="number" id="otherDeduction" placeholder="Other Deduction">
+
+        <div class="adminButtons">
+
+            <button onclick="saveTeacher()">
+                 Save Teacher
+            </button>
+
+            <button onclick="clearForm()">
+                 Clear
+            </button>
+
+            <button onclick="window.location='admin.html'">
+                 Back
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="searchBox">
+
+        <h2>Teachers</h2>
+
+        <table id="teacherTable">
+
+<thead>
+
+<tr>
+
+<th>Staff ID</th>
+
+<th>Teacher Name</th>
+
+<th>Gross Pay</th>
+
+<th>Net Pay</th>
+
+<th>Actions</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+</tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="common.js"></script>
+<script src="teachers.js"></script>
+<script src="manage.js"></script>
+
+</body>
+
+</html>
